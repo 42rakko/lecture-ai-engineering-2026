@@ -11,10 +11,24 @@ DEFAULT_MODEL = "gemini-3.5-flash-lite"
 MODEL = os.getenv("AIE_MODEL", DEFAULT_MODEL)
 
 
+# 1日あたりの上限（RPD）は待っても回復せず、太平洋時間の午前0時にリセットされる
+DAILY_LIMIT_MESSAGE = (
+    "1日あたりの上限に達した場合は、1分待っても回復しません。\n"
+    "AI Studio の使用状況（https://aistudio.google.com/usage）で確認し、"
+    "リセット（太平洋時間の午前0時 = 日本時間の16時、米国の冬時間中は17時）を待つか、"
+    "AIE_MODEL で別のモデルに切り替えてください。"
+)
+
+
 def api_error_message(status: int, detail: str = "") -> str:
     """HTTPステータスコードを、受講生向けの日本語の説明にする（ask.py と agent.py で共用）。"""
     if status == 429:
-        return "レート制限に達しました。1分ほど待ってから再実行してください。"
+        if "PerDay" in detail:
+            return DAILY_LIMIT_MESSAGE
+        return (
+            "レート制限に達しました。1分ほど待ってから再実行してください。\n"
+            "待っても続く場合は1日あたりの上限の可能性があります。\n" + DAILY_LIMIT_MESSAGE
+        )
     if status == 503:
         return "モデルが混み合っています（503）。少し待ってから再実行してください。"
     if status in (400, 401, 403, 404):

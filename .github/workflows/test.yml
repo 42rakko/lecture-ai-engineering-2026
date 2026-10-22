@@ -1,0 +1,21 @@
+# PR ごとにテストを実行する。テストは LLM を呼ばないので API キーは不要。
+# fork では Actions タブで有効化してから動く。
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv python install 3.12
+      - run: uv sync --frozen
+      - run: uv run pytest -q
