@@ -12,3 +12,6 @@ learning_log/
 
 # macOS
 .DS_Store
+
+# ベンチマーク生データ（集計表だけ answer.md に載せる）
+results/
