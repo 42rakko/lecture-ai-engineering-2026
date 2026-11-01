@@ -1,0 +1,146 @@
+{
+  "「トークン」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "最小単位"
+    ]
+  },
+  "「temperature」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "ランダム"
+    ]
+  },
+  "「ハルシネーション」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "もっともらしく"
+    ]
+  },
+  "「LoRA」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "低ランク"
+    ]
+  },
+  "「過学習」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "未知"
+    ]
+  },
+  "「量子化」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "ビット"
+    ]
+  },
+  "「エポック」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "1周"
+    ]
+  },
+  "「ガードレール」とは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "制約"
+    ]
+  },
+  "APIキーは何のための文字列ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "秘密"
+    ]
+  },
+  "学習率とは何を決める値ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "ハイパーパラメータ"
+    ]
+  },
+  "MCP って何をするためのものですか？": {
+    "needs_review": false,
+    "must_include": [
+      "標準プロトコル"
+    ]
+  },
+  "エージェントループの仕組みを教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "ツール"
+    ]
+  },
+  "LLM の出力を JSON などの決まった形で受け取る仕組みは何ですか？": {
+    "needs_review": false,
+    "must_include": [
+      "JSON"
+    ]
+  },
+  "人が途中で承認を挟む設計は何と呼びますか？": {
+    "needs_review": false,
+    "must_include": [
+      "人の確認"
+    ]
+  },
+  "Git のブランチは何のために使いますか？": {
+    "needs_review": false,
+    "must_include": [
+      "main"
+    ]
+  },
+  "LLM が一度に扱える長さの上限は何と呼びますか？": {
+    "needs_review": false,
+    "must_include": [
+      "上限"
+    ]
+  },
+  "RAG とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Transformer とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "RLHF とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "プロンプトインジェクションとは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "ベクトルデータベースとは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Docker とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "この講座の最終課題の締切はいつですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "担当教員の名前は何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  }
+}

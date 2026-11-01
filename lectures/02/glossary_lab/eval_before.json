@@ -1,0 +1,255 @@
+{
+  "summary": {
+    "label": "before",
+    "n": 24,
+    "format_rate": 0.125,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "content_A": 0.0,
+    "content_B": 0.0,
+    "content_C": 0.0,
+    "seconds": 39.4
+  },
+  "rows": [
+    {
+      "category": "A",
+      "question": "「トークン」とは何ですか？",
+      "raw": "{\"answer\": \"トークンとは、データやメッセージを解析する際に使用される単位です。例えば、JSON 解析では「{\\\"key\\\": \\\"value\\\"}」というオブジェクトを「トークン」として扱うことが一般的です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「temperature」とは何ですか？",
+      "raw": "{\"answer\": \"温度は、物質の分子運動の速度や熱エネルギーを測る物理量です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「ハルシネーション」とは何ですか？",
+      "raw": "{\"answer\": \"振動が周期的に増減し、振幅が最大値から最小値へ変化する現象\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「LoRA」とは何ですか？",
+      "raw": "{\"answer\": \"低秩自编码器（Low-Rank Adaptation）の略称で、大規模モデルを効率的に学習するための技術です。\"",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「過学習」とは何ですか？",
+      "raw": "{\"answer\": \"過学習とは、学習アルゴリズムが学習対象のデータに過度に習得し、テストデータや実装時に誤り（過学習）を起こす現象です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「量子化」とは何ですか？",
+      "raw": "{\"answer\": \"量子化とは、物理的な量（エネルギー、質量、速度など）を量子力学の枠組みで定義し、その値が離散的（分岐点）であることを指します。例えば、電子のエネルギーは量子力学で分岐点として定義され、連続的に変化しないという性質を持ちます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「エポック」とは何ですか？",
+      "raw": "{\"answer\": \"エポックは、プロジェクトの進捗状況や目標達成状況を示す重要な基準点です。プロジェクトが特定の目標を達成した瞬間に定義されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「ガードレール」とは何ですか？",
+      "raw": "{\"answer\": \"ガードレールは、歩行者や車両が歩道や道路を安全に通行するための金属製のフェンスやブロックの構造物です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "APIキーは何のための文字列ですか？",
+      "raw": "{\"answer\": \"認証とセキュリティのための一意のテキスト\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "学習率とは何を決める値ですか？",
+      "raw": "{\"answer\": \"学習率（learning rate）は、モデルの学習速度を制御するパラメータで、各ステップでモデルが誤差を最小化するために必要なステップ数（ステップ数）を決定します。学習率の値は、モデルの複雑さやデータ量によって異なりますが、学習率が小さすぎると学習が遅くなり、学習率が大きすぎると過学習（過学習）や欠陥学習（欠陥学習）が発生する可能性があります。一般的に、学習率は 10^-4 から 10^-6 程度の値で調整されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "MCP って何をするためのものですか？",
+      "raw": "{\"answer\": \"MCP は機械学習のモデルを構築・実行するためのフレームワークです。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "エージェントループの仕組みを教えてください。",
+      "raw": "{\"answer\": \"エージェントループは、複数のエージェントが互いに情報を交換し、相互に影響を与えることで、システム全体の挙動を制御・最適化する仕組みです。各エージェントは目標を達成するために、他のエージェントの行動を予測し、最適な行動を選択します。このプロセスを「エージェントループ」と呼びます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "LLM の出力を JSON などの決まった形で受け取る仕組みは何ですか？",
+      "raw": "{\"answer\": \"LLM の出力を JSON などの決まった形で受け取る仕組みは、API 通信（HTTP/REST API など）です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "人が途中で承認を挟む設計は何と呼びますか？",
+      "raw": "{\"answer\": \"承認を挟む設計は、承認のタイミングを調整して、承認の機会を最大化する設計を指します。これは「承認のタイミング調整」や「承認のタイミング最適化」とも呼ばれます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "Git のブランチは何のために使いますか？",
+      "raw": "{\"answer\": \"Git のブランチは、複数のバージョンのコードを管理し、各ブランチに特定の変更を適用する際に使用します。これにより、複数の開発者が同時にコードを変更し、互いに影響を最小限に抑えることができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "LLM が一度に扱える長さの上限は何と呼びますか？",
+      "raw": "{\"answer\": \"トークン数 (Token Count)\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "C",
+      "question": "RAG とは何ですか？",
+      "raw": "{\"answer\": \"RAG (Retrieval-Augmented Generation) は、大規模なテキストベースの知識ベース（RAG）を用いて、ユーザーが質問する文脈に基づいて、関連する知識を抽出し、その知識に基づいて生成する技術です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "Transformer とは何ですか？",
+      "raw": "{\"answer\": \"Transformer は、機械学習の分野で広く使われる、高度なアルゴリズムの一つです。特に、大規模なデータ処理や、複雑な最適化問題において、非常に効果的な手法として知られています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "RLHF とは何ですか？",
+      "raw": "{\"answer\": \"RLHF は Reinforcement Learning from Human Feedback (人間からの報酬学習) の略です。AI モデルを学習する際に、人間がモデルの出力に対して評価し、その評価に基づいて報酬（スコア）を返すことで、モデルが人間が好む表現を学習するプロセスを指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "プロンプトインジェクションとは何ですか？",
+      "raw": "{\"answer\": \"プロンプトインジェクションとは、攻撃者が AI エンジニアリング講座の用語集の説明を根拠に、特定の用語集の定義や構造を悪用して、攻撃者の目的（例：情報漏洩、システム不正利用）を実現する手法を指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "ベクトルデータベースとは何ですか？",
+      "raw": "{\"answer\": \"ベクトルデータベースは、データがベクトル（数値列）の形式で保存・操作されるデータベースです。ベクトルは、長さの異なる数値列であり、ベクトルデータベースは、これらのベクトルを効率的に検索・操作・管理するシステムです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "Docker とは何ですか？",
+      "raw": "{\"answer\": \"Docker は、容器化技術の一種で、アプリケーションを軽量なパッケージとして、OS の任意の環境で起動・停止・リロードできる環境を構築する技術です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "この講座の最終課題の締切はいつですか？",
+      "raw": "{\"answer\": \"2024 年 10 月 15 日\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "担当教員の名前は何ですか？",
+      "raw": "{\"answer\": \"担当教員の名前は「未指定」です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 24,
+    "format_rate": 1.0,
+    "content_rate": 0.5416666666666666,
+    "both_rate": 0.5416666666666666,
+    "content_A": 0.625,
+    "content_B": 0.5,
+    "content_C": 0.5,
+    "seconds": 45.6
+  },
+  "rows": [
+    {
+      "category": "A",
+      "question": "「トークン」とは何ですか？",
+      "raw": "{\"answer\": \"LLMがテキストを扱う最小単位。単語や文字の断片に分割される。APIの料金、レート制限、検出ツール（フィードバック）の構成が決まるのがよくわかる。日本語は英語より1文字あたりのトークン数が多くなりやすい。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「temperature」とは何ですか？",
+      "raw": "{\"answer\": \"学習データに与えるランダムさのレベル。低いほど結果が安定しやすく、高いほど多様になる。同じ入力でも出力が変わる原因の一つ。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「ハルシネーション」とは何ですか？",
+      "raw": "{\"answer\": \"LLMが事実と異なる内容や存在しない情報を、理由にもとから正しい情報に偽って返す現象。モデルが知らないこと（最新情報、存在しない組織・機関など）を、説明文に『知っている（検索履歴やツールの利用権限など）こと』と書き、表示したり、投稿したりする。本講座では、ツールを呼ばずに文章で答えていくため、ツールが知らずに返ってくるハルシネーションが多い。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「LoRA」とは何ですか？",
+      "raw": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「過学習」とは何ですか？",
+      "raw": "{\"answer\": \"学習データにだけ過度に適合し、未知の入力に対する性能が落ちる状態。学習に使わない検証データで性能を測って気づく。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「量子化」とは何ですか？",
+      "raw": "{\"answer\": \"モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「エポック」とは何ですか？",
+      "raw": "{\"answer\": \"学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "A",
+      "question": "「ガードレール」とは何ですか？",
+      "raw": "{\"answer\": \"モデルの出力や行動を、特定の内容や形式、またはルールで検出してそれを拒絶する仕組み。Claude Codeの auto-code には Python でのループでコードを数行で書き、その結果をツールで受け取るように設定したのが標準のガードレール。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "APIキーは何のための文字列ですか？",
+      "raw": "{\"answer\": \"APIを呼び出す人の識別用秘密の文字列。漏れると他人に利用枠を使われるため、コードに直接書かない、コミットしない、プロンプトに内包する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "学習率とは何を決める値ですか？",
+      "raw": "{\"answer\": \"1回の更新でパラメータをどれだけ動かすかを決めるハイパーパラメータ。大きすぎると学習が不安定になり、小さすぎると進みが遅い。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "MCP って何をするためのものですか？",
+      "raw": "{\"answer\": \"エージェントが外部のツールやサービスに接続し、その結果をユーザーに伝える仕組み。MCPサーバーとして公開したツールは、MCPクライアントが選んで接続でき、同じエージェントの中で同じツールを呼び出す（呼び分け）と、ツールが返るデータをクライアントが理解できるようにする（例：JSONで返す、フォーマットを指定する、）。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "エージェントループの仕組みを教えてください。",
+      "raw": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "LLM の出力を JSON などの決まった形で受け取る仕組みは何ですか？",
+      "raw": "{\"answer\": \"出力を固定型の値や、特定のフォーマット（例: JSON 1 行）で受け取るための関数や、ツールを呼ぶ先を指定するプロンプトの書き方。Pydantic AIでは output_type にPydanticモデルを指定する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "人が途中で承認を挟む設計は何と呼びますか？",
+      "raw": "{\"answer\": \"LLMが指示文の受け入れ先を、実際に使う先を、評価する先、投稿する先を順番に選び、途中で誰かに指示をもらうように設計したシステム。指示の先が複数あるとき、どの先を選ぶかはモデルの判断が揺れるので、評価や投稿をモデルに渡してもらう。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "Git のブランチは何のために使いますか？",
+      "raw": "{\"answer\": \"複数の作業流を区別し、互いに影響しない作業を同じrepoのどこかに固定する手法。作業の進行を切り替えるためのツール（例: fork → 自分へのfork → mainからbranchへPR投送）。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "category": "B",
+      "question": "LLM が一度に扱える長さの上限は何と呼びますか？",
+      "raw": "{\"answer\": \"モデルが1回の呼び出しで受け入れるテキストの最大数値。過学習のリスクを減らすために、質問と答えを2つのチャットで分けるのが一般的。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "category": "C",
+      "question": "RAG とは何ですか？",
+      "raw": "{\"answer\": \"モデルの質問応答先から、後続のツールの引用リンクをモデルに渡して、モデルがそのリンクから必要な情報を検索し、結果を返す、という「入力－検索－出力」のループをモデルに渡す技術。検索の結果が固定されたデータベースではなく、ツール呼び出しのリンクから実際のデータを取得できるため、利用者の行動をみる（どのツールを使いつか、どこに載る）と、結果が変わる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "Transformer とは何ですか？",
+      "raw": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "RLHF とは何ですか？",
+      "raw": "{\"answer\": \"エージェントの出力を人の意見や評価で改善するループの前半部分。PPOやDPOなどのアルゴリズムで、エージェントの振る舞い（プロンプト）や出力を利用した人への説明文を、エージェントに渡して評価した人の感想を、エージェントの次の行動を誘導する。本講座の第3回では、このループを回すたびにモデルをより人への配慮のある振る舞いを身につけさせる（PPO-RLHF）。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "プロンプトインジェクションとは何ですか？",
+      "raw": "{\"answer\": \"モデルが指示を出す前に、モデルの性格や知識をツール名の後に書き、呼び分时で受け入れる攻撃。本講座では「ツール名の性格を、呼び分时で切り替えて、次のツールを間違えて使う」のが典型例。本講座では習わない。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "ベクトルデータベースとは何ですか？",
+      "raw": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "Docker とは何ですか？",
+      "raw": "{\"answer\": \"プログラムを起動し、その起動後の状態を共有できる容器。内部の環境と構成ファイルで分割し、外側から切り離すためのプラットフォーム。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "この講座の最終課題の締切はいつですか？",
+      "raw": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "category": "C",
+      "question": "担当教員の名前は何ですか？",
+      "raw": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    }
+  ]
+}

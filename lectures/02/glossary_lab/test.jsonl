@@ -1,0 +1,24 @@
+{"question": "「トークン」とは何ですか？", "target": "{\"answer\": \"LLMがテキストを扱う最小単位。単語や文字の断片に分割される。APIの料金、レート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。日本語は英語より1文字あたりのトークン数が多くなりやすい。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「temperature」とは何ですか？", "target": "{\"answer\": \"次のトークンを選ぶときのランダムさを調整する設定値。低いほど出力が安定し、高いほど多様になる。同じ質問でも回答が変わる理由の一つ。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「ハルシネーション」とは何ですか？", "target": "{\"answer\": \"LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑える。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「LoRA」とは何ですか？", "target": "{\"answer\": \"事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「過学習」とは何ですか？", "target": "{\"answer\": \"学習データにだけ過度に適合し、未知の入力に対する性能が落ちる状態。学習に使わない検証データで性能を測って気づく。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「量子化」とは何ですか？", "target": "{\"answer\": \"モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「エポック」とは何ですか？", "target": "{\"answer\": \"学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "「ガードレール」とは何ですか？", "target": "{\"answer\": \"エージェントが望ましくない行動や出力をしないように設ける制約や検査。指示文でのルール、ツールの権限を絞る、出力をチェックする、重要な操作の前に人の確認を挟む、などの方法がある。\", \"needs_review\": false}", "needs_review": false, "category": "A"}
+{"question": "APIキーは何のための文字列ですか？", "target": "{\"answer\": \"APIを呼び出す人を識別するための秘密の文字列。漏れると他人に利用枠を使われるため、コードに直接書かない、コミットしない、チャットに貼らない。本講座ではCodespaces secretに登録し、環境変数 GEMINI_API_KEY として読み込む。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "学習率とは何を決める値ですか？", "target": "{\"answer\": \"1回の更新でパラメータをどれだけ動かすかを決めるハイパーパラメータ。大きすぎると学習が不安定になり、小さすぎると進みが遅い。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "MCP って何をするためのものですか？", "target": "{\"answer\": \"AIアプリと外部のツールやデータソースをつなぐためのオープンな標準プロトコル。MCPサーバーとして公開したツールは、対応する様々なエージェントやエディタ（MCPクライアント）から共通の方法で使える。第5回で、用語集の検索をMCPサーバーにして体験する。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "エージェントループの仕組みを教えてください。", "target": "{\"answer\": \"モデルに入力を渡す→モデルがツール呼び出しを返したら実行する→結果をモデルに戻す、をモデルが最終回答を返すまで繰り返す処理。1つの質問でLLMを複数回呼ぶため、時間・料金・レート制限への影響が大きい。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "LLM の出力を JSON などの決まった形で受け取る仕組みは何ですか？", "target": "{\"answer\": \"モデルの出力を、決めた型やJSONスキーマに沿った形で受け取る仕組み。プログラムで後処理しやすくなる。Pydantic AIでは output_type にPydanticモデルを指定する。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "人が途中で承認を挟む設計は何と呼びますか？", "target": "{\"answer\": \"エージェントの処理の途中に人の確認や承認を組み込むこと。データの書き込みや送信など、取り消しにくい操作の前に使う。Pydantic AIでは requires_approval=True を指定したツールで実現できる。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "Git のブランチは何のために使いますか？", "target": "{\"answer\": \"作業の流れを分けるための仕組み。main を壊さずに変更を試し、まとまったらPRで main に取り込む。本講座では回ごとに lec01 のような作業ブランチを作る。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "LLM が一度に扱える長さの上限は何と呼びますか？", "target": "{\"answer\": \"LLMが1回の呼び出しで扱える入力と出力の合計トークン数の上限。会話履歴やツールの結果もこの中に収める必要があるため、何をモデルに渡すかの設計が重要になる。\", \"needs_review\": false}", "needs_review": false, "category": "B"}
+{"question": "RAG とは何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "Transformer とは何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "RLHF とは何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "プロンプトインジェクションとは何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "ベクトルデータベースとは何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "Docker とは何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "この講座の最終課題の締切はいつですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
+{"question": "担当教員の名前は何ですか？", "target": "{\"answer\": \"この用語集には記載がありません。確認が必要です。\", \"needs_review\": true}", "needs_review": true, "category": "C"}
