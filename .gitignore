@@ -15,3 +15,5 @@ learning_log/
 
 # ベンチマーク生データ（集計表だけ answer.md に載せる）
 results/
+# 第5回: 資料から再生成する検索DB
+.cache/rag/
