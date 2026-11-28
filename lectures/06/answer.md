@@ -14,7 +14,15 @@
 
 <!-- 基礎・実装・発展のどれか1つに取り組めば完了です。 -->
 
-- 取り組んだレベル：基礎 / 実装 / 発展
-- やったこと：
+- 取り組んだレベル：発展
+- やったこと：Antigravity cliのmcp設定箇所を調べた
 - 結果：
-- 気づき・疑問：
+  -   調べた日 2026-11-28  https://antigravity.google/docs/mcp 
+  - 設定ファイル
+    - ~/.gemini/config/mcp_config.json  → グローバル設定のためすべてのプロジェクトに適用
+    - workspace/.agents/mcp_config.json  →　該当するworkspaceのみ適用
+  - コマンドで起動する書き方
+    - command
+  - URL で接続する書き方 
+    - serverUrl(urlでも可)
+- 気づき・疑問：これをつかえば、antigravityやcodexなどのエージェントがさらに便利になることが分かったが、実際に利用するとなると公開mcpサーバーを探したり信頼性を検証したりする必要がある。手軽なのは自作するのがいいと思った。
